@@ -22,8 +22,12 @@ StudyBuddy/
 
 ## Setup Instructions
 ### 1. Clone the repo
-git clone https://github.com/yourusername/studybuddy-yourname.git
-cd studybuddy-yourname
+git init
+git add .
+git commit -m "Initial commit: StudyBuddy full-stack project"
+git clone https://github.com/Dhanalakshmi-CSE2026/studybuddy---Dhanalakshmi-M.git
+git branch -M main
+git push -u origin main
 
 ### 2. Backend
 cd backend
