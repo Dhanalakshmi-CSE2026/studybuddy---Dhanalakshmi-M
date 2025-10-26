@@ -1,0 +1,43 @@
+echo "# StudyBuddy — Smart Study Planner
+
+## Overview
+StudyBuddy is a full-stack web application to help students plan, track, and manage tasks efficiently. It uses React frontend and Node.js + Express backend with MongoDB.
+
+## Tech Stack
+- Frontend: React
+- Backend: Node.js + Express
+- Database: MongoDB
+
+## Project Structure
+StudyBuddy/
+├─ frontend/
+├─ backend/
+└─ README.md
+
+## Features
+- Add, update, delete tasks
+- Mark tasks as completed
+- Search/filter tasks
+- Responsive design
+
+## Setup Instructions
+### 1. Clone the repo
+git clone https://github.com/yourusername/studybuddy-yourname.git
+cd studybuddy-yourname
+
+### 2. Backend
+cd backend
+npm install
+npm run dev
+
+Local:            http://localhost:5000
+### 3. Frontend
+cd ../frontend
+npm install
+npm start
+
+ Local:            http://localhost:3000
+  On Your Network:  http://192.168.56.1:3000
+## Author
+Dhanalakshmi M
+" > README.md
