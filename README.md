@@ -45,6 +45,8 @@ npm start
 ## Screenshots
 <img width="1832" height="907" alt="image" src="https://github.com/user-attachments/assets/908a105d-019b-4507-bcd3-cfe65cf9927f" />
 <img width="1842" height="910" alt="image" src="https://github.com/user-attachments/assets/34664fa5-6576-42b8-a550-b7b7ae2b8417" />
+<img width="1919" height="1016" alt="image" src="https://github.com/user-attachments/assets/0a8b5b07-3ddc-4aac-9711-f9e84de51cf5" />
+<img width="1917" height="1019" alt="image" src="https://github.com/user-attachments/assets/3da86590-e3b1-4158-af16-97bb40f25f80" />
 ## Author
 Dhanalakshmi M
 " > README.md
