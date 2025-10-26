@@ -42,6 +42,9 @@ npm start
 
  Local:            http://localhost:3000
   On Your Network:  http://192.168.56.1:3000
+## Screenshots
+<img width="1832" height="907" alt="image" src="https://github.com/user-attachments/assets/908a105d-019b-4507-bcd3-cfe65cf9927f" />
+<img width="1842" height="910" alt="image" src="https://github.com/user-attachments/assets/34664fa5-6576-42b8-a550-b7b7ae2b8417" />
 ## Author
 Dhanalakshmi M
 " > README.md
