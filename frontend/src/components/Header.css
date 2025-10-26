@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  background: #ffffff; /* clean white background */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Heading with vibrant gradient */
+.header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff7eb9, #ff758c); /* pink to coral gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.sub {
+  margin: 4px 0 0;
+  font-size: 0.95em;
+  color: #555555; /* dark gray for readability */
+}
+
+/* Right section */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Coins / gamification badge */
+.coins {
+  background: linear-gradient(135deg, #ffda6a, #ff6b6b); /* yellow to red gradient */
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 25px;
+  box-shadow: 0 0 12px rgba(255,107,107,0.5);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95em;
+  animation: shine 2s infinite alternate;
+}
+
+/* Coins glow animation */
+@keyframes shine {
+  from { box-shadow: 0 0 10px rgba(255,107,107,0.6); }
+  to { box-shadow: 0 0 22px rgba(255,107,107,0.8); }
+}

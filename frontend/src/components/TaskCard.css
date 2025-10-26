@@ -1,0 +1,102 @@
+.task-card {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  border-left: 6px solid #4caf50;
+  border-radius: 12px;
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.task-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.task-card.done {
+  border-left-color: #4caf50;
+  opacity: 0.8;
+}
+
+.task-card.overdue {
+  border-left-color: #f44336;
+  background: #fff0f0;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h4 {
+  margin: 0;
+  color: #3f51b5;
+  font-size: 1.05em;
+}
+
+.meta {
+  font-size: 0.8em;
+  color: #555;
+  display: flex;
+  gap: 10px;
+}
+
+/* Priority tag */
+.priority-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  margin-top: 6px;
+}
+
+.priority-tag.High { background: #f44336; }
+.priority-tag.Medium { background: #ff9800; }
+.priority-tag.Low { background: #4caf50; }
+
+/* Description */
+.desc {
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Card Actions */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-actions button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85em;
+}
+
+.card-actions button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Buttons */
+.complete-btn { background: #4caf50; color: white; }
+.edit-btn { background: #ff9800; color: white; }
+.delete-btn { background: #f44336; color: white; }
+
+@media (max-width: 600px) {
+  .card-actions {
+    flex-direction: column;
+  }
+}

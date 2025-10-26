@@ -1,0 +1,163 @@
+.tasklist-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tasklist-left {
+  flex: 2;
+}
+
+.tasklist-right {
+  flex: 1;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Dashboard Panel */
+.dashboard-panel {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* Stats Panel */
+.task-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 0.85em;
+  color: #555;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.task-stats .stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Badge Colors */
+.task-stats .total { background: #e0e0e0; }
+.task-stats .completed { background: #d4edda; color: #2e7d32; }
+.task-stats .pending { background: #fff3cd; color: #856404; }
+.task-stats .overdue { background: #f8d7da; color: #a71d2a; }
+
+/* Pie Chart */
+.pie-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pie-section h3 {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+.pie-section canvas {
+  max-width: 180px !important;
+  max-height: 180px !important;
+  margin: 0 auto;
+}
+
+/* Search Bar */
+.task-search {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+/* Task Card */
+.task-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #4caf50;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.task-card.completed { border-left-color: #4caf50; opacity: 0.7; }
+.task-card.overdue { border-left-color: #f44336; background: #fff3f3; }
+
+.task-info h3 {
+  margin: 0;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.priority { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-left: 6px; }
+.priority.High { background: #f44336; }
+.priority.Medium { background: #ff9800; }
+.priority.Low { background: #4caf50; }
+
+/* Task Buttons */
+.task-actions { display: flex; gap: 8px; margin-top: 8px; }
+
+.complete-btn { background: #4caf50; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.edit-btn { background: #ff9800; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.delete-btn { background: #f44336; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+
+.task-actions button:hover { opacity: 0.9; }
+
+.empty { color: #888; font-style: italic; }
+
+/* Calendar popup */
+.tasks-popup {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.popup-task {
+  padding: 4px 0;
+  font-size: 0.9em;
+  border-bottom: 1px solid #eee;
+}
+
+.popup-task:last-child { border-bottom: none; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tasklist-container { flex-direction: column; }
+}
+/* Stats badges hover effect */
+.task-stats .stat {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+.task-stats .stat:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Pie chart hover effect (container) */
+.pie-section {
+  text-align: center;
+  margin-bottom: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.pie-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
